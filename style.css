@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: 30px auto;
+  background-color: #f6f3ed;
+  color: #292724;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, p, pre {
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2, h3 {
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d3cdc2;
+}
+
+.header p, .category, .footer {
+  color: #625d55;
+  font-size: 14px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+  align-items: start;
+}
+
+form {
+  padding-right: 28px;
+  border-right: 1px solid #d3cdc2;
+  overflow: hidden;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #989084;
+  background-color: #fffdf8;
+  color: #292724;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+form input, form select, form textarea {
+  margin-bottom: 18px;
+}
+
+textarea {
+  display: block;
+  font-family: monospace;
+}
+
+button {
+  padding: 8px 14px;
+  border: 1px solid #989084;
+  background-color: #ede8df;
+  color: #292724;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.save-button {
+  background-color: #345c70;
+  border: 1px solid #345c70;
+  color: #ffffff;
+}
+
+#message {
+  margin-top: 12px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.search input {
+  width: 80%;
+  flex-grow: 1;
+}
+
+.snippets-section {
+  overflow: hidden;
+}
+
+.snippet-card {
+  padding: 24px 0;
+  border-bottom: 1px solid #d3cdc2;
+}
+
+.snippet-card h3, .category, .empty-state {
+  overflow: auto;
+}
+
+.category {
+  margin: 4px 0 12px;
+}
+
+.snippet-code {
+  overflow: auto;
+  padding: 14px;
+  background-color: #ebe7de;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.delete-button {
+  margin-top: 12px;
+  background-color: #f6f3ed;
+  border: 1px solid #bca99c;
+  color: #764536;
+}
+
+.empty-state {
+  padding: 32px 0;
+}
+
+.footer {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #d3cdc2;
+}
+
+@media (max-width: 760px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    padding: 0 0 28px;
+    border-right: 0;
+    border-bottom: 1px solid #d3cdc2;
+  }
+}

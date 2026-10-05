@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1>Shubham Sir's Cheat Sheet</h1>
+      </div>
+      <p><span id="noteCount">0</span> snippets saved</p>
+    </header>
+
+    <main>
+      <form id="noteForm" autocomplete="off">
+        <h2>Cheat sheet daal yaha</h2>
+
+        <label for="noteTitle">Title</label>
+        <input type="text" id="noteTitle" placeholder="Shubham Sir ka facebook" required>
+
+        <label for="noteCategory">Category</label>
+        <select id="noteCategory">
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Git">Git</option>
+          <option value="HTML">HTML</option>
+          <option value="General">Commands</option>
+        </select>
+
+        <label for="noteContent">Apka Content yaha</label>
+        <textarea id="noteContent" rows="6" placeholder="Note ka content" required></textarea>
+
+        <button type="submit" class="save-button">Lock kiya jaye</button>
+        <p id="message"></p>
+      </form>
+
+      <section class="snippets-section">
+        <label for="searchInput">Purana kaam</label>
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="Sarch karle yaha" autocomplete="off">
+          <button type="button" id="clearSearch" class="clear-button" style="display: none;">Clear</button>
+        </div>
+
+        <div id="snippetsGrid"></div>
+
+        <div class="empty-state" id="emptyState" style="display: none;">
+          <h3 id="emptyTitle">Apka code nihi mill raha</h3>
+          <p id="emptyDesc">Add kardo apna code</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Mera naam : Ayush Saini | Professor : Shubham Bhel</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
